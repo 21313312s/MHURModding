@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Modding Knowledge Base</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0; padding: 3rem 2rem;
+            max-width: 800px; margin: 0 auto;
+            line-height: 1.6;
+        }
+        h1 { color: #ffffff; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; }
+        .tutorial-list { list-style: none; padding: 0; }
+        .tutorial-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            transition: border-color 0.2s;
+        }
+        .tutorial-item:hover { border-color: var(--accent-color); }
+        .tutorial-item a { color: var(--accent-color); text-decoration: none; font-size: 1.1rem; font-weight: 600; }
+        .tutorial-item a:hover { text-decoration: underline; }
+        p { color: #8b949e; margin: 0.5rem 0 0 0; }
+    </style>
+</head>
+<body>
+    <h1>Modding Knowledge Base</h1>
+    <p>A collection of technical guides, reverse engineering notes, and custom modkits.</p>
+    
+    <h2>Tutorials</h2>
+    <ul class="tutorial-list">
+        <li class="tutorial-item">
+            <a href="tutorials/unreal-engine.html">Unreal Engine Cooked Editor Guide</a>
+            <p>How to configure and run a cooked editor setup for mod development.</p>
+        </li>
+        <li class="tutorial-item">
+            <a href="tutorials/asset-swapping.html">Custom Asset Swapping & UAsset Parsing</a>
+            <p>A deep dive into parsing binaries and managing custom assets.</p>
+        </li>
+    </ul>
+</body>
+</html>
